@@ -19,6 +19,7 @@
 		F16BA5E3179D0B0200A01E87 /* CDRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F16BA5E2179D0B0200A01E87 /* CDRootViewController.m */; };
 		F16BA63E179D0DDE00A01E87 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F16BA63D179D0DDE00A01E87 /* libCorePlot-CocoaTouch.a */; };
 		F16BA640179D0E9700A01E87 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16BA63F179D0E9700A01E87 /* QuartzCore.framework */; };
+		F16BA645179D138F00A01E87 /* CDPopulationChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = F16BA644179D138F00A01E87 /* CDPopulationChartView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +117,8 @@
 		F16BA63C179D0DDE00A01E87 /* NSNumberExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNumberExtensions.h; sourceTree = "<group>"; };
 		F16BA63D179D0DDE00A01E87 /* libCorePlot-CocoaTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libCorePlot-CocoaTouch.a"; sourceTree = "<group>"; };
 		F16BA63F179D0E9700A01E87 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F16BA643179D138F00A01E87 /* CDPopulationChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDPopulationChartView.h; path = Classes/CDPopulationChartView.h; sourceTree = "<group>"; };
+		F16BA644179D138F00A01E87 /* CDPopulationChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDPopulationChartView.m; path = Classes/CDPopulationChartView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +172,7 @@
 			children = (
 				F16BA5DE179D09E100A01E87 /* Application */,
 				F16BA5E0179D0A1200A01E87 /* ViewControllers */,
+				F16BA642179D12FD00A01E87 /* Views */,
 			);
 			path = chartdemo;
 			sourceTree = "<group>";
@@ -307,6 +311,15 @@
 			path = CorePlotHeaders;
 			sourceTree = "<group>";
 		};
+		F16BA642179D12FD00A01E87 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F16BA643179D138F00A01E87 /* CDPopulationChartView.h */,
+				F16BA644179D138F00A01E87 /* CDPopulationChartView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -376,6 +389,7 @@
 				F16BA5CE179D09D800A01E87 /* main.m in Sources */,
 				F16BA5D2179D09D800A01E87 /* CDAppDelegate.m in Sources */,
 				F16BA5E3179D0B0200A01E87 /* CDRootViewController.m in Sources */,
+				F16BA645179D138F00A01E87 /* CDPopulationChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +431,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,7 +455,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,9 +466,12 @@
 		F16BA5DC179D09D800A01E87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "chartdemo/chartdemo-Prefix.pch";
 				INFOPLIST_FILE = "chartdemo/chartdemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Vendor/CorePlot\"",
@@ -471,9 +488,12 @@
 		F16BA5DD179D09D800A01E87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "chartdemo/chartdemo-Prefix.pch";
 				INFOPLIST_FILE = "chartdemo/chartdemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Vendor/CorePlot\"",
