@@ -32,11 +32,20 @@
     
 	// Do any additional setup after loading the view.
     
-    _chartView = [[CDPopulationChartView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 300)];
+    //
+    UILabel *titleLable = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 50)];
+    [titleLable setText:@"WORLD\nPOPULATION"];
+    [titleLable setTextAlignment:NSTextAlignmentCenter];
+    [titleLable setFont:[UIFont fontWithName:@"ProximaNova-Bold" size:25]];
+    [titleLable setNumberOfLines:2];
     
+    _chartView = [[CDPopulationChartView alloc] initWithFrame:CGRectMake(0, 50, SCREEN_WIDTH, 100)];
+    
+    [self.view addSubview:titleLable];
     [self.view addSubview:_chartView];
     
-    
+    [titleLable release];
+    [_chartView release];
         
 }
 
