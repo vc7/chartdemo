@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		BF2BB197179DA969008A2DF2 /* ProximaNova.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF2BB196179DA969008A2DF2 /* ProximaNova.ttf */; };
+		F1618DB3179E2FDD00C5AF17 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1618DB2179E2FDD00C5AF17 /* SystemConfiguration.framework */; };
+		F1618DB5179E2FE700C5AF17 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1618DB4179E2FE700C5AF17 /* MobileCoreServices.framework */; };
+		F1618DB8179E31CF00C5AF17 /* CDRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1618DB7179E31CF00C5AF17 /* CDRootView.m */; };
+		F1618DBB179E40D000C5AF17 /* CDPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1618DBA179E40D000C5AF17 /* CDPanelView.m */; };
 		F16BA5C2179D09D800A01E87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16BA5C1179D09D800A01E87 /* UIKit.framework */; };
 		F16BA5C4179D09D800A01E87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16BA5C3179D09D800A01E87 /* Foundation.framework */; };
 		F16BA5C6179D09D800A01E87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16BA5C5179D09D800A01E87 /* CoreGraphics.framework */; };
@@ -35,6 +39,12 @@
 
 /* Begin PBXFileReference section */
 		BF2BB196179DA969008A2DF2 /* ProximaNova.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNova.ttf; sourceTree = "<group>"; };
+		F1618DB2179E2FDD00C5AF17 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F1618DB4179E2FE700C5AF17 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F1618DB6179E31CF00C5AF17 /* CDRootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDRootView.h; path = Classes/CDRootView.h; sourceTree = "<group>"; };
+		F1618DB7179E31CF00C5AF17 /* CDRootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDRootView.m; path = Classes/CDRootView.m; sourceTree = "<group>"; };
+		F1618DB9179E40D000C5AF17 /* CDPanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDPanelView.h; path = Classes/CDPanelView.h; sourceTree = "<group>"; };
+		F1618DBA179E40D000C5AF17 /* CDPanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDPanelView.m; path = Classes/CDPanelView.m; sourceTree = "<group>"; };
 		F16BA5BE179D09D800A01E87 /* chartdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chartdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F16BA5C1179D09D800A01E87 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F16BA5C3179D09D800A01E87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -158,6 +168,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1618DB5179E2FE700C5AF17 /* MobileCoreServices.framework in Frameworks */,
+				F1618DB3179E2FDD00C5AF17 /* SystemConfiguration.framework in Frameworks */,
 				F16BA640179D0E9700A01E87 /* QuartzCore.framework in Frameworks */,
 				F16BA5C2179D09D800A01E87 /* UIKit.framework in Frameworks */,
 				F16BA5C4179D09D800A01E87 /* Foundation.framework in Frameworks */,
@@ -192,6 +204,8 @@
 		F16BA5C0179D09D800A01E87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F1618DB4179E2FE700C5AF17 /* MobileCoreServices.framework */,
+				F1618DB2179E2FDD00C5AF17 /* SystemConfiguration.framework */,
 				F16BA63F179D0E9700A01E87 /* QuartzCore.framework */,
 				F16BA5C1179D09D800A01E87 /* UIKit.framework */,
 				F16BA5C3179D09D800A01E87 /* Foundation.framework */,
@@ -348,8 +362,12 @@
 		F16BA642179D12FD00A01E87 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F1618DB6179E31CF00C5AF17 /* CDRootView.h */,
+				F1618DB7179E31CF00C5AF17 /* CDRootView.m */,
 				F16BA643179D138F00A01E87 /* CDPopulationChartView.h */,
 				F16BA644179D138F00A01E87 /* CDPopulationChartView.m */,
+				F1618DB9179E40D000C5AF17 /* CDPanelView.h */,
+				F1618DBA179E40D000C5AF17 /* CDPanelView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -470,6 +488,8 @@
 				F16BA663179D32DD00A01E87 /* AFURLConnectionOperation.m in Sources */,
 				F16BA664179D32DD00A01E87 /* AFXMLRequestOperation.m in Sources */,
 				F16BA665179D32DD00A01E87 /* UIImageView+AFNetworking.m in Sources */,
+				F1618DB8179E31CF00C5AF17 /* CDRootView.m in Sources */,
+				F1618DBB179E40D000C5AF17 /* CDPanelView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
