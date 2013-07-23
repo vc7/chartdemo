@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF2BB197179DA969008A2DF2 /* ProximaNova.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF2BB196179DA969008A2DF2 /* ProximaNova.ttf */; };
 		F16BA5C2179D09D800A01E87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16BA5C1179D09D800A01E87 /* UIKit.framework */; };
 		F16BA5C4179D09D800A01E87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16BA5C3179D09D800A01E87 /* Foundation.framework */; };
 		F16BA5C6179D09D800A01E87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16BA5C5179D09D800A01E87 /* CoreGraphics.framework */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF2BB196179DA969008A2DF2 /* ProximaNova.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNova.ttf; sourceTree = "<group>"; };
 		F16BA5BE179D09D800A01E87 /* chartdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chartdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F16BA5C1179D09D800A01E87 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F16BA5C3179D09D800A01E87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -382,6 +384,7 @@
 			isa = PBXGroup;
 			children = (
 				F16BA667179D38B500A01E87 /* ProximaNova-Bold.ttf */,
+				BF2BB196179DA969008A2DF2 /* ProximaNova.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				F16BA5D6179D09D800A01E87 /* Default@2x.png in Resources */,
 				F16BA5D8179D09D800A01E87 /* Default-568h@2x.png in Resources */,
 				F16BA668179D38B500A01E87 /* ProximaNova-Bold.ttf in Resources */,
+				BF2BB197179DA969008A2DF2 /* ProximaNova.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +606,7 @@
 				F16BA5DD179D09D800A01E87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
