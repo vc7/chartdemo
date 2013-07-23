@@ -2,7 +2,7 @@
 //  CDPanelView.m
 //  chartdemo
 //
-//  Created by ANS MI0002 Vincent on 2013/07/23.
+//  Created by Vincent on 2013/07/23.
 //  Copyright (c) 2013年 Vincent. All rights reserved.
 //
 
