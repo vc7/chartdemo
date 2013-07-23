@@ -5,15 +5,43 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>${PRODUCT_NAME}</string>
+	<string>Population</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>7_Icon-Small</string>
+				<string>7_Icon</string>
+				<string>Icon</string>
+			</array>
+			<key>UIPrerenderedIcon</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>CFBundleIcons~ipad</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>7_Icon-Small</string>
+				<string>7_Icon-Small-50</string>
+				<string>7_Icon-72</string>
+				<string>7_Icon</string>
+				<string>Icon</string>
+			</array>
+		</dict>
+	</dict>
 	<key>CFBundleIdentifier</key>
 	<string>com.vincent.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>${PRODUCT_NAME}</string>
+	<string>World Population</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -24,6 +52,83 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>ProximaNova.ttf</string>
+		<string>ProximaNova-Bold.ttf</string>
+	</array>
+	<key>UILaunchImageFile</key>
+	<string>Default</string>
+	<key>UILaunchImageFile~ipad</key>
+	<string>Default</string>
+	<key>UILaunchImages</key>
+	<array>
+		<dict>
+			<key>UILaunchImageMinimumOSVersion</key>
+			<string>7.0</string>
+			<key>UILaunchImageName</key>
+			<string>Default</string>
+			<key>UILaunchImageOrientation</key>
+			<string>Portrait</string>
+			<key>UILaunchImageSize</key>
+			<string>{320, 568}</string>
+		</dict>
+		<dict>
+			<key>UILaunchImageMinimumOSVersion</key>
+			<string>7.0</string>
+			<key>UILaunchImageName</key>
+			<string>Default</string>
+			<key>UILaunchImageOrientation</key>
+			<string>Portrait</string>
+			<key>UILaunchImageSize</key>
+			<string>{320, 480}</string>
+		</dict>
+	</array>
+	<key>UILaunchImages~ipad</key>
+	<array>
+		<dict>
+			<key>UILaunchImageMinimumOSVersion</key>
+			<string>7.0</string>
+			<key>UILaunchImageName</key>
+			<string>Default-Landscape</string>
+			<key>UILaunchImageOrientation</key>
+			<string>Landscape</string>
+			<key>UILaunchImageSize</key>
+			<string>{748, 1024}</string>
+		</dict>
+		<dict>
+			<key>UILaunchImageMinimumOSVersion</key>
+			<string>7.0</string>
+			<key>UILaunchImageName</key>
+			<string>Default-Portrait</string>
+			<key>UILaunchImageOrientation</key>
+			<string>Portrait</string>
+			<key>UILaunchImageSize</key>
+			<string>{768, 1004}</string>
+		</dict>
+		<dict>
+			<key>UILaunchImageMinimumOSVersion</key>
+			<string>7.0</string>
+			<key>UILaunchImageName</key>
+			<string>Default</string>
+			<key>UILaunchImageOrientation</key>
+			<string>Portrait</string>
+			<key>UILaunchImageSize</key>
+			<string>{320, 568}</string>
+		</dict>
+		<dict>
+			<key>UILaunchImageMinimumOSVersion</key>
+			<string>7.0</string>
+			<key>UILaunchImageName</key>
+			<string>Default</string>
+			<key>UILaunchImageOrientation</key>
+			<string>Portrait</string>
+			<key>UILaunchImageSize</key>
+			<string>{320, 480}</string>
+		</dict>
+	</array>
+	<key>UIPrerenderedIcon</key>
+	<true/>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -33,11 +138,6 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>ProximaNova.ttf</string>
-		<string>ProximaNova-Bold.ttf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
