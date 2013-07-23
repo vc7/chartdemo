@@ -1,7 +1,7 @@
 Bar Chart Demo
 =========
 
-## Spects
+## Spec
 
 * Build for iOS 5.0 and above.
 * Both iPhone and iPad.
