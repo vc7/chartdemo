@@ -1,8 +1,6 @@
 Bar Chart Demo
 =========
 
-----
-
 ## Spects
 
 * Build for iOS 5.0 and above.
@@ -15,3 +13,6 @@ Bar Chart Demo
  AFNetworking  | 1.3.1       
 
 
+## Reference
+* Wikipedia -  [World Population](http://en.wikipedia.org/wiki/World_population)
+* Flat UI Colors - [Website](http://flatuicolors.com/)
