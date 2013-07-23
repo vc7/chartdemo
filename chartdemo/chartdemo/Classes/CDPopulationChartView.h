@@ -9,11 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface CDPopulationChartView : UIView
-{
-    NSDictionary *dataDictionary;
-    
-    @private
-    CPTXYGraph *graph;
-}
+
+
+@property (nonatomic, assign) NSArray *population;
 
 @end
