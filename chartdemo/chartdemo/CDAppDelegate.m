@@ -28,6 +28,16 @@
     self.window.rootViewController = rootViewController;
     
     [self.window makeKeyAndVisible];
+    
+    // Make some to load faster.
+    dispatch_async(dispatch_get_main_queue(), ^{
+		
+        // Setup status bar network indicator
+		[AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
+        
+	});
+
+    
     return YES;
 }
 

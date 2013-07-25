@@ -91,8 +91,10 @@
         [AFJSONRequestOperation JSONRequestOperationWithRequest:request
                                                         success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
                                                             if (response.statusCode >= 200) {
-                                                                //NSLog(@"IP Address: %@", [[JSON objectAtIndex:0] objectForKey:@"data"]);
-                                                                [_rootView setData:JSON];
+                                                                dispatch_async(dispatch_get_main_queue(), ^{
+                                                                    NSDictionary *responseObject = JSON;
+                                                                    [_rootView setData:responseObject];
+                                                                });
                                                             }
                                                         }
                                                         failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
